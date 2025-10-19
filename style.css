@@ -537,6 +537,17 @@
             transform: translateY(-5px);
             border-color: transparent;
         }
+        .social-icon {
+            width: 28px;
+            height: 28px;
+            filter: brightness(0.8);
+            transition: filter 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-link:hover .social-icon {
+            filter: brightness(1.2);
+            transform: scale(1.1);
+        }
 
         /* Responsive */
         @media (max-width: 768px) {
@@ -580,3 +591,6 @@
                 grid-template-columns: 1fr;
             }
         }
+
+
+        
